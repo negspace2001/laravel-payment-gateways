@@ -1,6 +1,6 @@
 <?php
 
-namespace Stephenjude\PaymentGateway\Http\Controllers;
+namespace Negspace2001\PaymentGateway\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
