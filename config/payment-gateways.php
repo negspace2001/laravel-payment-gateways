@@ -72,36 +72,21 @@ return [
      * This is a list of all supported payment gateway providers.
      */
     'providers' => [
-        'pay4me' => [
-            'name' => 'pay4me',
-            'channels' => ['bank_transfer'],
-            'base_url' => env('PAY4ME_API_URL', 'https://pay.pay4me.app/'),
-            'public' => env('PAY4ME_PUBLIC'),
-            'secret' => env('PAY4ME_SECRET'),
+        'orangemoney' => [
+            'name' => 'orangemoney',
+            'channels' => ['mobile_transfer'],
+            'base_url' => env('ORANGEMONEY_API_URL', 'https://payment.orange.cm/'),
+            'public' => env('ORANGEMONEY_PUBLIC'),
+            'secret' => env('ORANGEMONEY_SECRET'),
         ],
-        'monnify' => [
-            'name' => 'monnify',
-            'channels' => ['CARD', 'ACCOUNT_TRANSFER'],
-            'base_url' => env('MONNIFY_API_URL', 'https://api.monnify.com/'),
-            'public' => env('MONNIFY_PUBLIC'),
-            'secret' => env('MONNIFY_SECRET'),
-            'contract_code' => env('MONNIFY_CONTRACT_CODE'),
+        'mtnmoney' => [
+            'name' => 'mtnmoney',
+            'channels' => ['mobile_transfer'],
+            'base_url' => env('MTNMONEY_API_URL', 'https://sandbox.momodeveloper.mtn.com/collection/'),
+            'public' => env('MTNMONEY_PUBLIC'),
+            'secret' => env('MTNMONEY_SECRET'),
         ],
-        'seerbit' => [
-            'name' => 'seerbit',
-            'channels' => ['card', 'account', 'transfer', 'ussd'],
-            'base_url' => env('SEERBIT_API_URL', 'https://seerbitapi.com/'),
-            'public' => env('SEERBIT_PUBLIC'),
-            'secret' => env('SEERBIT_SECRET'),
-        ],
-        'paystack' => [
-            'name' => 'paystack',
-            'channels' => ['card', 'bank', 'ussd', 'qr', 'mobile_money', 'bank_transfer'],
-            'base_url' => env('PAYSTACK_API_URL', 'https://api.paystack.co/'),
-            'public' => env('PAYSTACK_PUBLIC'),
-            'secret' => env('PAYSTACK_SECRET'),
-        ],
-        'flutterwave' => [
+        'mtnmobilemoney' => [
             'name' => 'flutterwave',
             'channels' => ['card', 'banktransfer', 'ussd', 'credit', 'mpesa', 'qr'],
             'base_url' => env('FLUTTERWAVE_API_URL', 'https://api.flutterwave.com/'),
@@ -114,13 +99,6 @@ return [
             'base_url' => env('STRIPE_API_URL', 'https://api.stripe.com/'),
             'public' => env('STRIPE_PUBLIC'),
             'secret' => env('STRIPE_SECRET'),
-        ],
-        'klasha' => [
-            'name' => 'klasha',
-            'channels' => null,
-            'base_url' => env('KLASHA_API_URL', 'https://gate.klasapps.com/'),
-            'public' => env('KLASHA_PUBLIC'),
-            'secret' => env('KLASHA_SECRET'),
         ],
     ],
 ];
