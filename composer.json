@@ -1,18 +1,18 @@
 {
-    "name": "stephenjude/laravel-payment-gateways",
+    "name": "negspace2001/laravel-payment-gateways",
     "description": "A simple Laravel API implementation for all payment providers like Paystack, Flutterwave, & Paypal etc.",
     "keywords": [
-        "stephenjude",
+        "negspace2001",
         "laravel",
         "laravel-payment-gateways"
     ],
-    "homepage": "https://github.com/stephenjude/laravel-payment-gateways",
+    "homepage": "https://github.com/negspace2001/laravel-payment-gateways",
     "license": "MIT",
     "authors": [
         {
-            "name": "stephenjude",
-            "email": "stephenjudesuccess@gmail.com",
-            "role": "Developer"
+            "name": "negspace2001",
+            "email": "nguimbouseffa@yahoo.fr",
+            "role": "Software Engineer"
         }
     ],
     "require": {
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Stephenjude\\PaymentGateway\\": "src",
-            "Stephenjude\\PaymentGateway\\Database\\Factories\\": "database/factories"
+            "Negspace2001\\PaymentGateway\\": "src",
+            "Negspace2001\\PaymentGateway\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Stephenjude\\PaymentGateway\\Tests\\": "tests"
+            "Negspace2001\\PaymentGateway\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -58,10 +58,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Stephenjude\\PaymentGateway\\PaymentGatewayServiceProvider"
+                "Negspace2001\\PaymentGateway\\PaymentGatewayServiceProvider"
             ],
             "aliases": {
-                "PaymentGateway": "Stephenjude\\PaymentGateway\\Facades\\PaymentGateway"
+                "PaymentGateway": "Negspace2001\\PaymentGateway\\Facades\\PaymentGateway"
             }
         }
     },
