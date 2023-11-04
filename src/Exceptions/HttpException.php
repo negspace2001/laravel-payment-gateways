@@ -1,6 +1,6 @@
 <?php
 
-namespace Stephenjude\PaymentGateway\Exceptions;
+namespace Negspace2001\PaymentGateway\Exceptions;
 
 use Exception;
 
