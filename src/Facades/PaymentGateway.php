@@ -5,7 +5,7 @@ namespace Negspace2001\PaymentGateway\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Stephenjude\PaymentGateway\PaymentGateway
+ * @see \Negspace2001\PaymentGateway\PaymentGateway
  */
 class PaymentGateway extends Facade
 {
