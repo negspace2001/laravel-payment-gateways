@@ -1,6 +1,6 @@
 <?php
 
-namespace Stephenjude\PaymentGateway;
+namespace Negspace2001\PaymentGateway;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
