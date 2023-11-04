@@ -1,6 +1,6 @@
 <?php
 
-namespace Stephenjude\PaymentGateway\Facades;
+namespace Negspace2001\PaymentGateway\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
