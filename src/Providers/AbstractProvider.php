@@ -1,6 +1,6 @@
 <?php
 
-namespace Stephenjude\PaymentGateway\Providers;
+namespace Negspace2001\PaymentGateway\Providers;
 
 use Exception;
 use Illuminate\Http\Client\Response;
@@ -8,10 +8,10 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 use Laravel\SerializableClosure\SerializableClosure;
-use Stephenjude\PaymentGateway\Contracts\ProviderInterface;
-use Stephenjude\PaymentGateway\DataObjects\SessionData;
-use Stephenjude\PaymentGateway\DataObjects\TransactionData;
-use Stephenjude\PaymentGateway\Enums\Provider;
+use Negspace2001\PaymentGateway\Contracts\ProviderInterface;
+use Negspace2001\PaymentGateway\DataObjects\SessionData;
+use Negspace2001\PaymentGateway\DataObjects\TransactionData;
+use Negspace2001\PaymentGateway\Enums\Provider;
 
 abstract class AbstractProvider implements ProviderInterface
 {
@@ -129,13 +129,9 @@ abstract class AbstractProvider implements ProviderInterface
     {
         return match ($this->provider) {
             Provider::STRIPE() => $response->json('error.message'),
-            Provider::PAYSTACK() => $response->json('message'),
             Provider::FLUTTERWAVE() => $response->json('message'),
-            Provider::PAY4ME() => $response->json('error.code').'. '.$response->json('error.message'),
-            Provider::SEERBIT() => $response->json('error').'. '.$response->json('message'),
-            Provider::MONNIFY() => $response->json('responseMessage')
-                ?? $response->json('error').'. '.$response->json('error_description'),
-            Provider::KLASHA() => $response->json('error').'. '.$response->json('message'),
+            Provider::ORANGEMONEY() => $response->json('error.code').'. '.$response->json('error.message'),
+            Provider::MTNMONEY() => $response->json('error.code').'. '.$response->json('error.message'),
             default => $response->reason()
         };
     }
