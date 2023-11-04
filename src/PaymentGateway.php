@@ -1,11 +1,11 @@
 <?php
 
-namespace Stephenjude\PaymentGateway;
+namespace Negspace2001\PaymentGateway;
 
 use BadMethodCallException;
 use ReflectionClass;
-use Stephenjude\PaymentGateway\Providers\AbstractProvider;
-use Stephenjude\PaymentGateway\Providers\PaystackProvider;
+use Negspace2001\PaymentGateway\Providers\AbstractProvider;
+use Negspace2001\PaymentGateway\Providers\PaystackProvider;
 
 /**
  * @method PaystackProvider paystack()
