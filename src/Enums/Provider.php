@@ -1,6 +1,6 @@
 <?php
 
-namespace Stephenjude\PaymentGateway\Enums;
+namespace Negspace2001\PaymentGateway\Enums;
 
 use ArchTech\Enums\InvokableCases;
 use ArchTech\Enums\Names;
@@ -16,15 +16,9 @@ enum Provider: string
 
     case STRIPE = 'stripe';
 
-    case PAYSTACK = 'paystack';
+    case ORANGEMONEY = 'orangemoney';
 
-    case PAY4ME = 'pay4me';
-
-    case MONNIFY = 'monnify';
+    case MTNMONEY = 'mtnmoney';
 
     case FLUTTERWAVE = 'flutterwave';
-
-    case SEERBIT = 'seerbit';
-
-    case KLASHA = 'klasha';
 }
