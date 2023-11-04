@@ -6,7 +6,7 @@ return [
      * Company's support email is displayed to the user when they have completed their payment transactions.
      * When set to null the support email won't be displayed.
      */
-    'support_email' => 'support@company.email',
+    'support_email' => 'nguimbouseffa@yahoo.fr',
 
     /*
      * Display messages for successful or failed payments.
