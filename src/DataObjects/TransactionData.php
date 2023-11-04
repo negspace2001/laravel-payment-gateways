@@ -1,6 +1,6 @@
 <?php
 
-namespace Stephenjude\PaymentGateway\DataObjects;
+namespace Negspace2001\PaymentGateway\DataObjects;
 
 use Spatie\LaravelData\Data;
 
