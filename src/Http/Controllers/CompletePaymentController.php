@@ -1,6 +1,6 @@
 <?php
 
-namespace Stephenjude\PaymentGateway\Http\Controllers;
+namespace Negspace2001\PaymentGateway\Http\Controllers;
 
 use Exception;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -8,7 +8,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Stephenjude\PaymentGateway\PaymentGateway;
+use Negspace2001\PaymentGateway\PaymentGateway;
 
 class CompletePaymentController extends Controller
 {
