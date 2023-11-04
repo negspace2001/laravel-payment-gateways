@@ -1,10 +1,10 @@
 <?php
 
-namespace Stephenjude\PaymentGateway\Contracts;
+namespace Negspace2001\PaymentGateway\Contracts;
 
 use Laravel\SerializableClosure\SerializableClosure;
-use Stephenjude\PaymentGateway\DataObjects\SessionData;
-use Stephenjude\PaymentGateway\DataObjects\TransactionData;
+use Negspace2001\PaymentGateway\DataObjects\SessionData;
+use Negspace2001\PaymentGateway\DataObjects\TransactionData;
 
 interface ProviderInterface
 {
